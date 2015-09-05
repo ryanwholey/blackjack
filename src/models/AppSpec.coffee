@@ -1,1 +1,0 @@
-#check to see if deck, playerhand and dealerhand are generated at initialization

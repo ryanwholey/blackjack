@@ -1,8 +1,6 @@
 class window.Hand extends Backbone.Collection
   model: Card
 
-  bank : 100
-
   initialize: (array, @deck, @isDealer) ->
 
   hit: ->
