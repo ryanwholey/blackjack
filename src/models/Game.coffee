@@ -6,5 +6,4 @@ class window.Game extends Backbone.Model
     @set 'dealerHand', deck.dealDealer()
 
   bet: ->
-    console.log('bet')
     @trigger 'bet', @

@@ -3,7 +3,6 @@
 class window.App extends Backbone.Model
 
   initialize: ->
-    @set 'bank', 100
     @set 'game', game = new Game()
     console.log(@attributes.bank)
 
