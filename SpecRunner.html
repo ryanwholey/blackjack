@@ -9,12 +9,15 @@
     <script src="lib/backbone.js"></script>
     <script src="lib/mocha/mocha.js"></script>
     <script src="lib/chai/chai.js"></script>
+    <script src="node_modules/sinon/pkg/sinon.js"></script>
+
     <script>
       mocha.setup('bdd');
       $(function() {
         window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
       })
     </script>
+
 
     <!-- include source files here... -->
     <script src="src/compiled/models/Card.js"></script>
@@ -27,9 +30,13 @@
     <script src="src/compiled/views/AppView.js"></script>
 
     <!-- include spec files here... -->
+    <script src="spec/compiled/AppSpec.js"></script>
+    <script src="spec/compiled/CardViewSpec.js"></script>
+    <script src="spec/compiled/HandSpec.js"></script>
+    <script src="spec/compiled/HandViewSpec.js"></script>
     <script src="spec/compiled/CardSpec.js"></script>
     <script src="spec/compiled/DeckSpec.js"></script>
-    <script src="spec/compiled/BlackjackViewSpec.js"></script>
+    <script src="spec/compiled/AppViewSpec.js"></script>
 
     <!-- // <script src="compiled/spec/main.js"></script> -->
 

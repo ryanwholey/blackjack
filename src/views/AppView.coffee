@@ -25,8 +25,9 @@ class window.AppView extends Backbone.View
     @$('.stand-button').prop('disabled', true)
     dealer = @model.get('dealerHand')
     dealer.first().flip()
-    if @model.get('playerHand').minScore() <= 21 then dealer.hit() while dealer.scores()[1] < 18
+    if @model.get('playerHand').minScore() <= 21 then dealer.hit() while dealer.scores()[1] < 17
     dealer.stand()  
+
 
   scoreGame: ->
     if @model.get('playerHand').minScore() > 21 then console.log('DEALER WINS')

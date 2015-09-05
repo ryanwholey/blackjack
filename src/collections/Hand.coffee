@@ -1,16 +1,16 @@
 class window.Hand extends Backbone.Collection
   model: Card
 
+  bank : 100
+
   initialize: (array, @deck, @isDealer) ->
 
   hit: ->
     @add(@deck.pop())
-    console.log('hit')
     if @minScore() > 21 then @stand()
     @last()
 
   stand: ->
-    console.log('stand')
     @trigger('stand', @)
 
   hasAce: -> @reduce (memo, card) ->
